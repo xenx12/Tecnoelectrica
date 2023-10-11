@@ -1,0 +1,52 @@
+const oracledb = require('oracledb');
+oracledb.initOracleClient();
+
+// Configura la información de conexión
+const dbConfig = {
+  user: 'ADMINISTRADOR',
+  password: '123456',
+  connectString: 'xe' // Ejemplo: 'localhost/orcl'
+};
+
+// Establece la conexión a la base de datos
+async function connectToDatabase() {
+  try {
+    await oracledb.createPool(dbConfig);
+    console.log('Conexión a Oracle establecida correctamente');
+  } catch (error) {
+    console.error('Error al conectar a Oracle: ', error);
+  }
+}
+
+// Llama a la función para establecer la conexión
+connectToDatabase();
+
+
+
+async function ejecutarConsulta() {
+  let connection;
+
+  try {
+    connection = await oracledb.getConnection();
+    const result = await connection.execute(
+      'SELECT columna1, columna2 FROM tu_tabla WHERE condicion',
+      // Reemplaza con tu consulta SQL y condiciones
+    );
+
+    console.log('Resultado de la consulta:', result.rows);
+
+  } catch (error) {
+    console.error('Error al ejecutar la consulta:', error);
+  } finally {
+    if (connection) {
+      try {
+        await connection.close();
+      } catch (error) {
+        console.error('Error al cerrar la conexión:', error);
+      }
+    }
+  }
+}
+
+// Llama a la función para ejecutar la consulta
+//ejecutarConsulta();
