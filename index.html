@@ -60,22 +60,29 @@
       <table id="example" class="table table-bordered" style=" background-color: rgb(255, 255, 255); text-align: center;">
             <thead >
               <tr>
-                <th style="text-align: center; width: 50px;" scope="col" >NRO. OT</th>
-                <th style="text-align: center; width: 50px;" scope="col">CLIENTE</th>
-                <th style="text-align: center; width: 50px;" scope="col">TITULO</th>
+                <th style="text-align: center;" scope="col" >NRO. OT</th>
+                <th style="text-align: center;" scope="col">CLIENTE</th>
+                <th style="text-align: center;" scope="col">TITULO</th>
+                <th style="text-align: center;" scope="col">FECHA RECEPCION</th>
+
                 <th style="text-align: center; width: 50px;" scope="col">
                  
-                  <h5>FECHAS DE ENTREGA</h5>
+                  <h6>FECHAS DE ENTREGA</h6>
 
                 </th>
                 <th style="text-align: center; width: 50px;" scope="col">
                  
-                    <h5>TIEMPO DE COTIZACION</h5>
+                    <h6>TIEMPO DE COTIZACION</h6>
   
                 </th>
                 <th style="text-align: center; width: 50px;" scope="col">
                  
-                    <h5>REPROCESOS</h5>
+                  <h6>TIEMPO DE FACTURACION</h6>
+
+                </th>
+                <th style="text-align: center; width: 50px;" scope="col">
+                 
+                    <h6>GES</h6>
   
                 </th>
               </tr>
@@ -85,14 +92,15 @@
                     <th scope="row">34789</th>
                     <td>Coca cola</td>
                     <td>Reparacion de Motores</td>
+                    <td >13/10/2023</td>
                     <td style="width: 350px;  ">
                     
                               <table class="table table-info table-striped table-sm" > 
                                   <thead>
                                     <tr>
-                                      <th scope="col"  style="text-align: center;" >Entrega</th>
-                                      <th scope="col" style="text-align: center;">Real</th>
-                                      <th scope="col" style="text-align: center;">Estimada</th>
+                                      <th scope="col"  style="text-align: center;" >Guia Entrega</th>
+                                      <th scope="col" style="text-align: center;">Termino</th>
+                                      <th scope="col" style="text-align: center;">Programacion</th>
 
                                     </tr>
                                   </thead>
@@ -109,7 +117,7 @@
 
 
                     </td>
-                    <td  >
+                <td  >
                     <table class="table table-dark table-striped-columns table-sm" > 
                         <thead>
                           <tr>
@@ -142,107 +150,68 @@
                         </tbody>
                     </table>
                 </td>
-                    <td  ><table class="table table-info table-striped table-sm" > 
-                        <thead>
-                          <tr>
-                            <th scope="col"  style="text-align: center;" >Fecha</th>
-                            <th scope="col" style="text-align: center;">Estado</th>
+                <td  >
+                  <table class="table table-dark table-striped-columns table-sm" > 
+                      <thead>
+                        <tr>
+                          <th scope="col"  style="text-align: center;" >Fecha Guia</th>
+                          <th scope="col"  style="text-align: center;" >
+                              <i class="bi bi-clock"></i>
+                          </th>
+                          <th scope="col" style="text-align: center;">Fecha OC</th>
+                          <th scope="col"  style="text-align: center;" >
+                              <i class="bi bi-clock"></i>
+                          </th>                            
+                          <th scope="col" style="text-align: center;">Facturacion</th>
+                          <th scope="col"  style="text-align: center;" >
+                              <i class="bi bi-clock"></i>
+                          </th>
 
-                          </tr>
-                        </thead>
-                        <tbody >
-                          <tr>
-                          <td >11/10/2023</td>
-                          <td  ><div style="background-color: rgb(5, 173, 55); width: 100%;"><i class="bi bi-emoji-smile"></i>                          </div></td>
+                        </tr>
+                      </thead>
+                      <tbody >
+                        <tr>
+                      <td >11/10/2023</td>
+                      <td >1d</td>
+                      <td >12/10/2023</td>
+                      <td >1d</td>
+                      <td >13/10/2023</td>
+                      <td >1d</td>
 
-                          </tr>
-                         
-                        </tbody>
-                    </table></td>
+                        </tr>
+                       
+                      </tbody>
+                  </table>
+              </td>
+
+              <td style="width: 350px;  ">
+                    
+                              <table class="table table-info table-striped table-sm" > 
+                                  <thead>
+                                    <tr>
+                                      <th scope="col"  style="text-align: center;" >Fecha</th>
+                                      <th scope="col" style="text-align: center;">Numero</th>
+                                      <th scope="col" style="text-align: center;">Factura</th>
+
+                                    </tr>
+                                  </thead>
+                                  <tbody >
+                                    <tr>
+                                    <td >11/10/2023</td>
+                                    <td >41234</td>
+                                    <td >32143</td>
+
+                                    </tr>
+                                   
+                                  </tbody>
+                              </table>
+
+
+                    </td>
 
             </tr>
 
-            <tr>
-                <th scope="row">24789</th>
-                <td>Tecnoelectrica</td>
-                <td>Reparacion de Motores</td>
-                <td style="width: 350px;  ">
-                
-                          <table class="table table-info table-striped table-sm" > 
-                              <thead>
-                                <tr>
-                                  <th scope="col"  style="text-align: center;" >Entrega</th>
-                                  <th scope="col" style="text-align: center;">Real</th>
-                                  <th scope="col" style="text-align: center;">Estimada</th>
-
-                                </tr>
-                              </thead>
-                              <tbody >
-                                <tr>
-                                <td >11/10/2023</td>
-                                <td >12/10/2023</td>
-                                <td >13/10/2023</td>
-
-                                </tr>
-                               
-                              </tbody>
-                          </table>
-
-
-                </td>
-                <td  >
-                <table class="table table-dark table-striped-columns table-sm" > 
-                    <thead>
-                      <tr>
-                        <th scope="col"  style="text-align: center;" >Diagnostico</th>
-                        <th scope="col"  style="text-align: center;" >
-                            <i class="bi bi-clock"></i>
-                        </th>
-                        <th scope="col" style="text-align: center;">Cotizacion</th>
-                        <th scope="col"  style="text-align: center;" >
-                            <i class="bi bi-clock"></i>
-                        </th>                            
-                        <th scope="col" style="text-align: center;">Aprobacion</th>
-                        <th scope="col"  style="text-align: center;" >
-                            <i class="bi bi-clock"></i>
-                        </th>
-
-                      </tr>
-                    </thead>
-                    <tbody >
-                      <tr>
-                    <td >11/10/2023</td>
-                    <td >1d</td>
-                    <td >12/10/2023</td>
-                    <td >1d</td>
-                    <td >13/10/2023</td>
-                    <td >1d</td>
-
-                      </tr>
-                     
-                    </tbody>
-                </table>
-            </td>
-                <td  ><table class="table table-info table-striped table-sm" > 
-                    <thead>
-                      <tr>
-                        <th scope="col"  style="text-align: center;" >Fecha</th>
-                        <th scope="col" style="text-align: center;">Estado</th>
-
-                      </tr>
-                    </thead>
-                    <tbody >
-                      <tr>
-                      <td >11/10/2023</td>
-                      <td  ><div style="background-color: rgb(197, 43, 43); width: 100%;"><i class="bi bi-emoji-frown"></i>
-                      </div></td>
-
-                      </tr>
-                     
-                    </tbody>
-                </table></td>
-
-        </tr>
+    
             
              
             </tbody>
